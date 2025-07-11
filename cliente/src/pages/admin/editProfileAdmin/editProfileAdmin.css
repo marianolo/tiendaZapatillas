@@ -1,0 +1,86 @@
+.register-form {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 35px;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+.register-form h2 {
+    color: #333333;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.register-form input[type="password"],
+.register-form input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.register-form input[type="password"]:focus,
+.register-form input[type="text"]:focus {
+    border-color: #1d4ed8;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(29, 78, 216, 0.1);
+}
+
+/* Estilo para campos con error */
+.register-form input.input-error {
+    border-color: #e3342f;
+    background-color: #f8d7da;
+}
+
+.register-form input.input-error:focus {
+    border-color: #e3342f;
+    box-shadow: 0 0 0 2px rgba(227, 52, 47, 0.2);
+}
+
+/* Botón de enviar */
+.btn-save {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: medium;
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #1d4ed8;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-save:hover {
+    background-color: #0c3078;
+}
+
+.btn-save:focus {
+    box-shadow: 0 0 0 3px rgba(29, 78, 216, 0.3);
+}
+
+/* Mensajes de éxito y error */
+.success-message {
+    color: #38a169; /* Verde */
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.error-message {
+    color: #e3342f; /* Rojo */
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}

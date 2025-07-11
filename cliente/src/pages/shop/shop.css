@@ -1,0 +1,221 @@
+.shopTitle {
+  margin-top: 80px;
+  text-align: center;
+  font-size: 36px;
+  color: #333333; /* Color más oscuro para el título */
+  font-weight: bold;
+  margin-bottom: 40px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribuye los elementos equitativamente */
+  align-items: center; /* Centra el contenido horizontalmente */
+  text-align: center;
+  width: 300px;
+  height: 500px; /* Altura fija para todas las tarjetas */
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fdfdfd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product img {
+  width: 100%;
+  max-height: 200px; /* Tamaño consistente para imágenes */
+  object-fit: contain; /* Evita distorsiones */
+  border-radius: 10px;
+}
+
+.product .description {
+  flex: 1; /* Toma el espacio restante */
+  margin: 10px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.product .description p {
+  font-weight: bold;
+  color: #333;
+  margin: 5px 0;
+}
+
+.product button {
+  margin-top: auto; /* Empuja el botón al final de la tarjeta */
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.product button:hover {
+  background-color: #555;
+}
+
+.addToCartBttn {
+  background-color: #343a40; /* Color oscuro para el botón */
+  color: white;
+  border: none;
+  min-width: 120px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.addToCartBttn:hover {
+  background-color: #495057; /* Oscurecer un poco el botón al hacer hover */
+  color: white;
+  cursor: pointer;
+}
+
+@keyframes slide {
+  0%, 33% { margin-left: 0%; }
+  35%, 66% { margin-left: -100%; }
+  69%, 99% { margin-left: -200%; }
+}
+
+.slide-var {
+  width: 100%; /* Aprovechar todo el ancho del contenedor */
+  max-width: 300px; /* Limitar el tamaño máximo */
+  margin: 20px auto; /* Centrar el slider */
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.slide-var ul {
+  display: flex;
+  width: 300%; /* Ancho total para animación */
+  padding: 0;
+  margin: 0;
+  animation: slide 10s infinite alternate ease-in-out;
+}
+
+.slide-var li {
+  list-style: none;
+  flex: 1; /* Distribuir espacio equitativo */
+}
+
+.slide-var img {
+  width: 100%;
+  height: auto; /* Mantener la proporción de la imagen */
+  border-radius: 10px;
+  object-fit: cover; /* Ajustar la imagen al contenedor sin deformarse */
+}
+
+.footer {
+  width: 100%;
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  padding: 40px 0;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap; /* Ajusta para dispositivos pequeños */
+}
+
+.footer-socials, .footer-contact, .footer-links, .footer-subscribe, .footer-description {
+  flex: 1;
+  margin: 0 20px;
+}
+
+.footer a {
+  color: #ecf0f1;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #3498db;
+}
+
+.footer h4 {
+  margin-bottom: 15px;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #3498db;
+}
+
+.footer p {
+  margin: 5px 0;
+}
+
+.footer-subscribe input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.footer-subscribe button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.footer-description p {
+  font-size: 1.2em;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-socials, .footer-contact, .footer-links, .footer-subscribe, .footer-description {
+    margin: 20px 0;
+  }
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  width: 100%;
+  max-width: 400px;  /* Ancho máximo para pantallas más grandes */
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: box-shadow 0.3s ease;
+}
+
+.search-bar input:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  /* Sombra suave al hacer focus */
+}
+
+/* Ajustes para dispositivos pequeños */
+@media (max-width: 768px) {
+  .search-bar input {
+    width: 90%;  /* Ajustar el campo de búsqueda en pantallas pequeñas */
+  }
+}

@@ -1,0 +1,65 @@
+.cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* Añadir un poco de espacio alrededor del carrito */
+}
+
+.cartItem {
+  width: 700px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1); /* Reducir la intensidad de la sombra */
+  border-radius: 15px; /* Hacer los bordes menos redondeados */
+  margin: 20px;
+  background-color: #ecf0f1; /* Color de fondo suave y profesional */
+  padding: 15px; /* Añadir un poco de relleno interno */
+  transition: box-shadow 0.3s ease; /* Transición suave al hover */
+}
+
+.cartItem:hover {
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2); /* Añadir un efecto hover para destacar los items */
+}
+
+.cartItem img {
+  width: 180px; /* Ajustar el tamaño de las imágenes para una proporción más limpia */
+  margin-right: 20px; /* Añadir espacio entre la imagen y la descripción */
+  border-radius: 10px; /* Hacer las esquinas de la imagen ligeramente redondeadas */
+}
+
+.cartItem .description {
+  width: 100%;
+  font-size: 20px; /* Reducir un poco el tamaño para un look más profesional */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente profesional */
+  color: #2c3e50; /* Color oscuro para mejor legibilidad */
+  line-height: 1.5; /* Mejorar la legibilidad de la descripción */
+}
+
+.countHandler input {
+  width: 40px;
+  text-align: center;
+  font-weight: bold;
+  border: 1px solid #bdc3c7; /* Añadir un borde suave al input */
+  border-radius: 5px; /* Bordes redondeados */
+  padding: 5px; /* Añadir algo de espacio interno */
+}
+
+.checkout button {
+  width: 150px;
+  height: 50px;
+  background-color: #2980b9; /* Cambiar a un azul más sobrio */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  margin: 10px;
+  cursor: pointer;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  transition: background-color 0.3s ease; /* Añadir una transición suave al hover */
+}
+
+.checkout button:hover {
+  background-color: #3498db; /* Un azul un poco más claro para el hover */
+}

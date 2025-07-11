@@ -1,0 +1,63 @@
+/* Estilos para la página principal */
+.App {
+  width: 100vw;
+  min-height: 100vh;
+  height: auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f9; /* Fondo claro y neutro */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Estilos globales para el body */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f4f4f9; /* Fondo coherente con .App */
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333333; /* Texto principal más oscuro */
+}
+
+/* Mejoras para la tipografía */
+h1, h2, h3, h4, h5, h6 {
+  color: #222222; /* Colores más oscuros para los títulos */
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+p {
+  margin-bottom: 15px;
+  color: #555555; /* Texto de párrafos más suave */
+}
+
+/* Enlaces */
+a {
+  text-decoration: none;
+  color: #007BFF; /* Azul más serio para los enlaces */
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #0056b3; /* Oscurecimiento al pasar el cursor sobre el enlace */
+}
+
+/* Ajustes de caja y scroll */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth; /* Transición suave al hacer scroll */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

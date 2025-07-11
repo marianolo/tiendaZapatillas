@@ -1,0 +1,87 @@
+.register-form {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 35px;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+.register-form h2 {
+    color: #333333;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.register-form input[type="password"],
+.register-form input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.register-form input[type="password"]:focus,
+.register-form input[type="text"]:focus {
+    border-color: #1d4ed8;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(29, 78, 216, 0.1);
+}
+
+.btn-cancel, .btn-save {
+    width: 48%;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: medium;
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-cancel {
+    background-color: #9ca3af;
+    margin-right: 4%;
+}
+
+.btn-cancel:hover {
+    background-color: #6b7280;
+}
+
+.btn-save {
+    background-color: #2563eb;
+}
+
+.btn-save:hover {
+    background-color: #1e40af;
+}
+
+.success-message, .error-message {
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.success-message {
+    color: green;
+}
+
+.error-message {
+    color: red;
+}
+
+.input-error {
+    border-color: red !important;
+    box-shadow: 0 0 0 2px rgba(255, 0, 0, 0.1);
+}

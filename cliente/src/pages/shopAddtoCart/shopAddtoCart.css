@@ -1,0 +1,121 @@
+.shopTitle {
+  margin-top: 80px;
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  color: #333333; /* Un color más oscuro y sobrio */
+  margin-bottom: 40px;
+}
+
+.products {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px; /* Espaciado uniforme entre los productos */
+}
+
+.product {
+  border-radius: 10px;
+  width: 380px;
+  height: auto;
+  padding: 20px;
+  background-color: #f8f9fa; /* Fondo claro para destacar los productos */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra más suave y profesional */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product:hover {
+  transform: translateY(-10px); /* Efecto de hover: levanta el producto */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); /* Aumenta la sombra al hacer hover */
+  cursor: pointer;
+}
+
+.product img {
+  width: 100%; /* Imagen ajustada al contenedor */
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.product .description {
+  text-align: center;
+  font-size: 18px;
+  color: #555555; /* Color más suave para el texto */
+  margin-bottom: 10px;
+}
+
+.product .descripcion {
+  font-size: 16px;
+  color: #777777; /* Color más claro para las descripciones */
+  margin-bottom: 15px;
+}
+
+.addToCartBttn {
+  background-color: #343a40; /* Botón con un color oscuro más serio */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.addToCartBttn:hover {
+  background-color: #495057; /* Oscurecer el botón en hover */
+  cursor: pointer;
+}
+
+@keyframes slide {
+  0%, 33% { margin-left: 0%; }
+  35%, 66% { margin-left: -100%; }
+  69%, 99% { margin-left: -200%; }
+}
+
+.slide-var {
+  width: 60%;
+  margin: 50px auto;
+  overflow: hidden;
+  border-radius: 10px; /* Bordes redondeados para el slider */
+}
+
+.slide-var ul {
+  display: flex;
+  padding: 0;
+  width: 300%;
+  animation: slide 12s infinite alternate ease-in-out;
+}
+
+.slide-var li {
+  list-style: none;
+  width: 100%;
+}
+
+.slide-var img {
+  width: 100%;
+  border-radius: 10px; /* Bordes redondeados para las imágenes */
+}
+
+.searchBar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.searchBar input {
+  width: 300px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.searchBar input:focus {
+  border-color: #3498db; /* Cambia el color del borde cuando está enfocado */
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Sombra cuando está enfocado */
+  outline: none; /* Elimina el borde azul predeterminado */
+}

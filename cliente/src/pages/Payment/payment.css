@@ -1,0 +1,46 @@
+.FormGroup {
+    margin: 100px 15px 20px;
+    padding: 0;
+    border-style: none;
+    background-color: #f1f1f1; /* Fondo claro y neutro */
+    will-change: opacity, transform;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15), 0 2px 5px rgba(0, 0, 0, 0.1), inset 0 1px 0 #d1d1d1;
+    border-radius: 8px; /* Esquinas más redondeadas para un look moderno */
+}
+
+.FormRow {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-top: 1px solid #d1d1d1; /* Color más sutil */
+}
+
+.StripeElement {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: #000000; /* Fondo blanco */
+    border: 1px solid #000000; /* Borde más definido */
+    border-radius: 4px; 
+}
+
+.pay {
+    display: block;
+    font-size: 16px;
+    width: calc(100% - 30px);
+    height: 45px;
+    margin: 40px 15px 0;
+    background-color: #007bff; /* Azul para mayor seriedad */
+    box-shadow: 0 6px 9px rgba(50, 50, 93, 0.1), 0 2px 5px rgba(0, 0, 0, 0.05), inset 0 1px 0 #0056b3;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 200ms ease-in-out, box-shadow 200ms ease-in-out;
+    border: none;
+}
+
+.pay:active {
+    background-color: #0056b3; /* Azul más oscuro al hacer clic */
+    box-shadow: 0 6px 9px rgba(50, 50, 93, 0.1), 0 2px 5px rgba(0, 0, 0, 0.05), inset 0 1px 0 #004085;
+    transform: scale(0.98); /* Ligera reducción para efecto de presión */
+}
