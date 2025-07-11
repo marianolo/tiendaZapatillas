@@ -1,7 +1,11 @@
 import Stripe from "stripe"; // Portal de pagos para conectarse a su API
+import dotenv from 'dotenv';
+
+// Cargar variables de entorno
+dotenv.config();
 
 // Clave de acceso de Stripe para recibir el pago
-const striper = Stripe('sk_test_51PrWa5P1kZZ4pJ7r0T9olwhWKsxG9Pn9G7buqfV7GYyczQJIrc6MzDciu9Un5jN7je2WudCPM4bd4IlZH7l08ggD007fV71GYs');
+const striper = Stripe(process.env.STRIPE_SECRET_KEY);
 
 // Función que permite conectarse a la API de Stripe y realizar los pagos
 export const pay = async (req, res) => {
@@ -15,7 +19,7 @@ export const pay = async (req, res) => {
             description: 'shop',
             payment_method: id,
             confirm: true,
-            return_url: 'http://localhost:8000/payment/confirmation',  // URL a la que el usuario será redirigido después del pago
+            return_url: `${process.env.BACKEND_URL}/payment/confirmation`,  // URL a la que el usuario será redirigido después del pago
         });
 
         console.log('payment', payment); // Loguear los detalles del pago
